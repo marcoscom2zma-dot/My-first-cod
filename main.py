@@ -1,13 +1,15 @@
 
-# --- CÓDIGO DE DEMONSTRAÇÃO ---
-# Este é um script simples em Python para demonstrar o uso do GitHub.
+def count_words(text: str) -> int:
+    """Conta o número de palavras em um texto."""
+    return len(text.split())
 
-def saudar_usuario(nome):
-    mensagem = f"Olá, {nome}! Seja muito bem-vindo ao meu primeiro projeto no GitHub."
-    return mensagem
+def count_characters(text: str) -> int:
+    """Conta o número de caracteres (incluindo espaços)."""
+    return len(text)
 
-# Execução do código
-if __name__ == "__main__":
-    nome_visitante = "Visitante"
-    print(saudar_usuario(nome_visitante))
+def analyze_text(text: str):
+    """Executa e exibe a análise completa do texto."""
+    if not text.strip():
+        print("⚠️ O texto fornecido está vazio.")
+        return
 
